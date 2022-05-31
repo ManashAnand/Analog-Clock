@@ -1,0 +1,82 @@
+body{
+    background-color: #2f2f2f;
+}
+#mainBox{
+    
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#clock{
+    background-color: wheat;
+    border: 1.3rem solid ;
+    border-radius: 50% !important;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    height: 10rem;
+    width: 10rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  
+}
+#hourHand{
+    border: 1px solid blue;
+    height: 3rem;
+    position: relative;
+    bottom: 20px;
+    width: 0.2rem;
+    background-color: blue;
+    border-radius: 5px;
+    z-index:  3;
+    
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    
+
+}
+#minHand{
+    border: 1px solid orangered;
+    height: 3.9rem;
+    position: relative;
+    bottom: 26px;
+    width: 0.2rem;
+    right: 5px;
+    background-color: orangered;
+    border-radius: 5px;
+    z-index:  2;
+    
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    transition-timing-function:cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#secHand{
+    border: 1px solid greenyellow;
+    height: 4.5rem;
+    position: relative;
+    bottom: 29px;
+    width: 0.2rem;
+    right: 10px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    z-index:  1;
+    
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+#btn{
+    border: 1px solid white;
+    height: 1rem;
+    width: 8rem;
+    background-color: white;
+    margin-top: 2rem;
+    display: flex;
+    border-radius: 3rem;
+    justify-content: center;
+    box-shadow: 0.3rem 0.7rem black;
+    transition: all 1s;
+}
